@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>update</title>
+</head>
+<body>
+	<form action="{% url 'update' %}" method="POST" >{% csrf_token %}
+		Lab id :<input type="text" name="lab_id" value="{{lab_id}}" readonly><br><br>
+		PCD id :<input type="text" name="pcd_id" value="{{obj.v_id}}" readonly=""><br><br>
+		PCD name :<input type="text" name="pcd_name" value="{{obj.v_name}}" readonly><br><br>
+		Date : <input type="text" name="date" value="2020-12-20" readonly><br><br>
+		Time : <input type="text" name="time" value="12:12"><br><br>
+		Lab Tech_id:<input type="text" name="id1" value="##" readonly><br><br>
+		<label for="cars">Reason:</label>
+          <select id="reasons" name="reason">
+            <optgroup >
+              <option value="BOOK READING">BOOK READING</option>
+              <option value="CAMICHAL LENE">CAMICAL LENE</option>
+              <option value="TO TALK SOMEONE">TO TALK SOMEONE</option>
+              <option value="AISE HI">AISE HI</option>
+            </optgroup>
+          </select><br><br>
+
+         Access time:<input type="text" name="atime"><br><br>
+         MOB number:<input type="text" name="mob" value="{{obj.v_mob}}"><br><br>
+         <button type="submit" class="btn btn-success">Save person</button>
+	</form>
+</body>
+</html>

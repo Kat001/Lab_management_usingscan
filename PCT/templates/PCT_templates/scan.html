@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{obj.v_name}}</title>
+	<style type="text/css">
+		
+		a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+#div1 {
+			width :200px;
+			height: 200px;
+			padding-left: 200px;
+			padding-top: 200px;
+			background-color: pink;
+			padding-right: 200px;
+		}
+	</style>
+</head>
+<body>	
+	<div id="div1">
+			<a href="{% url 'add_record' v_id %}">Allow Entery For This Lab..</a>
+			<a href="{% url 'cheak_record' v_id %}">Cheak previous Record..</a>
+	</div>
+</body>
+</html>

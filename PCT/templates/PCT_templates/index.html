@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+
+	<style type="text/css">
+		.myDiv {
+ 			 border: 5px outset red;
+  			background-color: lightblue;    
+  			text-align: center;
+		}
+		
+		#div1 {
+			width :200px;
+			height: 200px;
+			padding-left: 200px;
+			padding-top: 200px;
+			background-color: pink;
+			padding-right: 200px;
+		}
+
+		a:link, a:visited {
+  					background-color: #f44336;
+	  				color: white;
+	  				padding: 14px 25px;
+	  				text-align: center;
+	  				text-decoration: none;
+	  				display: inline-block;
+		}
+
+		a:hover, a:active {
+  				background-color: red;
+		}
+	</style>
+</head>
+<body>
+ 		
+
+		<div class="myDiv">
+  				<h2>Provide Access to LAB</h2>
+  				<p>Only Volunteers are allowed</p>
+		</div>
+
+
+	<div id="div1">
+      
+      <a href="{% url 'scan' %}">SCAN ID</a>
+
+     </div>
+</body>
+</html>

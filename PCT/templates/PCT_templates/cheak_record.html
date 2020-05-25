@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recod</title>
+
+
+	<style type="text/css">
+
+		#customers {
+  			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  			border-collapse: collapse;
+ 			 width: 100%;
+		}
+
+		#customers td, #customers th {
+  			border: 1px solid #ddd;
+  			padding: 8px;
+		}
+
+		#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+		#customers tr:hover {background-color: #ddd;}
+
+	#customers th {
+  		padding-top: 12px;
+  		padding-bottom: 12px;
+  		text-align: left;
+  		background-color: #4CAF50;
+  		color: white;
+	}
+		
+
+
+
+	</style>
+</head>
+<body>
+
+	<center> <h1>Record of {{iid}}</h1></center><br><br>
+	<div id="div1">
+		<p>LAB 1</p><br><br>
+		<table id="customers" border="1px solid black" width="100%">
+            
+
+			<tr>
+               <th>Sr No.</th>
+               <th>PCD ID</th>
+               <th>VISIT DATE</th>
+               <th>Entery Time</th>
+               <th>Out Time</th>
+               <th>REASON</th>
+            </tr>
+            
+			{% for o in l1_obj %}
+					
+			<tr>	
+               <td>{{forloop.counter}}</td>
+               <td>{{o.v_id}}</td>
+               <td>{{o.visit_date}}</td>
+               <td>{{o.entry_time}}</td>
+               <td>{{o.going_time}}</td>
+               <td>{{o.reason}}</td>
+             </tr>
+              
+          
+            {% endfor %}
+           
+        </table><br><br>
+    </div>
+    
+    <div id="div2">
+
+        <p>LAB 2</p><br>
+
+        <table id="customers" border="1px solid black" width="100%">
+            
+
+			<tr>
+               <th>Sr No.</th>
+               <th>PCD ID</th>
+               <th>VISIT DATE</th>
+               <th>Entery Time</th>
+               <th>Out Time</th>
+               <th>REASON</th>
+            </tr>
+            
+			{% for o in l2_obj %}
+					
+			<tr>	
+               <td>{{forloop.counter}}</td>
+               <td>{{o.v_id}}</td>
+               <td>{{o.visit_date}}</td>
+               <td>{{o.entry_time}}</td>
+               <td>{{o.going_time}}</td>
+               <td>{{o.reason}}</td>
+             </tr>
+              
+          
+            {% endfor %}
+           
+        </table><br>
+    </div>
+
+    
+
+    <div id="div2">
+        <p>LAB 3</p><br>
+
+        <table id="customers" border="1px solid black" width="100%">
+            
+
+			<tr>
+               <th>Sr No.</th>
+               <th>PCD ID</th>
+               <th>VISIT DATE</th>
+               <th>Entery Time</th>
+               <th>Out Time</th>
+               <th>REASON</th>
+            </tr>
+            
+			{% for o in l3_obj %}
+					
+			<tr>	
+               <td>{{forloop.counter}}</td>
+               <td>{{o.v_id}}</td>
+               <td>{{o.visit_date}}</td>
+               <td>{{o.entry_time}}</td>
+               <td>{{o.going_time}}</td>
+               
+               <td>{{o.reason}}</td>
+             </tr>
+              
+          
+            {% endfor %}
+           
+        </table><br>
+
+    </div>
+
+    
+
+    <div id="div4">
+        <p>LAB 4</p><br>
+
+        <table id="customers" border="1px solid black" width="100%">
+            
+
+			<tr>
+               <th>Sr No.</th>
+               <th>PCD ID</th>
+               <th>VISIT DATE</th>
+               <th>Entery Time</th>
+               <th>Out Time</th>
+               <th>REASON</th>
+            </tr>
+            
+			{% for o in l4_obj %}
+					
+			<tr>	
+               <td>{{forloop.counter}}</td>
+               <td>{{o.v_id}}</td>
+               <td>{{o.visit_date}}</td>
+               <td>{{o.entry_time}}</td>
+               <td>{{o.going_time}}</td>
+               
+               <td>{{o.reason}}</td>
+             </tr>
+              
+          
+            {% endfor %}
+           
+        </table>
+    </div>
+		
+</body>
+</html>
